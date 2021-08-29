@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1second</title>
+    <title>1phút</title>
+    <link rel="icon" type="image/png" href="https://ik.imagekit.io/9r6zmqeo432/images/image_2021-08-29_224029_F1JoIAQqA.png?updatedAt=1630251633647">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -20,142 +21,121 @@
   <body>
     <!-- ===========================  nav =========================== -->
     <div id="top"></div>
-    <!-- category -->
-    <div class="category">
-      <div class="search__bar flex__center">
-        <div class="search__bar-icon"><i class="ri-search-line"></i></div>
+    <!-- ========== nav top ========= -->
+    <div class="nav__top">
+      <div class="nav__top-search-bar flex__center">
+        <div class="nav__top-search-bar-icon">
+          <i class="ri-search-line"></i>
+        </div>
         <input type="search" placeholder="Tìm kiếm hình ảnh ..." />
       </div>
-      <div class="category__nav flex__center">
-        <div class="category__item">
-          <a href="index.html">Ảnh&nbsp;<i class="ri-camera-line"></i></a>
+      <div class="nav__top-type-media flex__center">
+        <div class="nav__top-type-media-item">
+          <a href="index.html">Ảnh&nbsp;&nbsp;<i class="ri-camera-line"></i></a>
         </div>
-        <div class="category__item">
-          <a href="video.html">Video&nbsp;<i class="ri-live-line"></i></a>
+        <div class="nav__top-type-media-item">
+          <a href="video.html">Video&nbsp;&nbsp;<i class="ri-live-line"></i></a>
         </div>
-        <div class="category__item">
-          <a href="music.html">Nhạc&nbsp;<i class="ri-headphone-line"></i></a>
+        <div class="nav__top-type-media-item">
+          <a href="music.html"
+            >Nhạc&nbsp;&nbsp;<i class="ri-headphone-line"></i
+          ></a>
         </div>
       </div>
     </div>
-    <!-- container -->
-    <div class="container">
-      <!-- menu -->
-      <nav class="nav">
-        <div class="heading flex__center">
-          <h1 class="title">1second</h1>
-          <p class="nav__description">
+    <!-- ========== end nav top ========= -->
+
+    <!-- ========== nav left side ========= -->
+    <div class="content__left">
+      <nav class="nav__side">
+        <div class="nav__side-head flex__center">
+          <h1 class="nav__side-title">1phút</h1>
+          <p class="nav__side-description">
             Đây là demo Frontend website đa phương tiện. Website trong chuỗi tập
             tành làm Frontend.
           </p>
         </div>
-        <div class="main__nav">
-          <div class="main__nav-item"><a href="index.html">Trang chủ</a></div>
-          <div class="main__nav-item">
+        <div class="nav__side-content">
+          <div class="nav__side-content-item">
+            <a href="index.html">Trang chủ</a>
+          </div>
+          <div class="nav__side-content-item">
             <a href="members.html">Thành viên</a>
           </div>
-          <div class="main__nav-item"><a href="#">Liên lạc</a></div>
-          <div class="main__nav-item"><a href="#">Tải lên</a></div>
-          <div class="main__nav-item"><a href="#">Yêu thích</a></div>
-          <div class="main__nav-item"><a href="#">Thùng rác</a></div>
+          <div class="nav__side-content-item"><a href="#">Liên lạc</a></div>
+          <div class="nav__side-content-item"><a href="#">Tải lên</a></div>
+          <div class="nav__side-content-item"><a href="#">Yêu thích</a></div>
+          <div class="nav__side-content-item"><a href="#">Thùng rác</a></div>
         </div>
-        <div class="ending">
-          <div class="social flex__center">
-            <a class="social-link" href="#"
-              ><i class="ri-facebook-circle-fill"></i
-            ></a>
-            <a class="social-link" href="#"
-              ><i class="ri-instagram-line"></i
-            ></a>
-            <a class="social-link" href="#"><i class="ri-youtube-line"></i></a>
-            <a class="social-link" href="#"><i class="ri-discord-fill"></i></a>
-            <a class="social-link" href="#"><i class="ri-github-fill"></i></a>
+        <div class="nav__side-end">
+          <div class="nav__side-social flex__center">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+            <a href="#"><i class="ri-discord-fill"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
           </div>
-          <p class="copyright">&#169; Bản quyền - Của ai nhỉ?</p>
+          <p class="nav__side-copyright">&#169; Bản quyền - Của ai nhỉ?</p>
         </div>
       </nav>
     </div>
-    <!-- =========================== end ============================== -->
+    <!-- ========== end nav left side ========= -->
+    <!-- =========================== end nav ============================== -->
 
     <!-- =========================== content =========================== -->
-    <div class="container__content">
+    <div class="content__right">
       <!--  -->
       <div class="col">
-        <div class="img" id="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/1_pP4xoB4ez7.jpg?updatedAt=1630246602988" alt="Play in a pond" />
-          <div class="img__info">
-            <span><q>Play in a pond</q></span>
-            <div class="img__info-icon">
-              <i class="ri-heart-line"></i>
-              <i class="ri-download-2-line"></i>
-              <i
-                class="ri-fullscreen-line"
-                onclick="openModal();currentSlide()"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/2_PxxoCHFjw.jpg?updatedAt=1630246603091" alt="Water drop" />
-          <div class="img__info">
-            <span><q>Water drop</q></span>
-            <div class="img__info-icon">
-              <i class="ri-heart-line"></i>
-              <i class="ri-download-2-line"></i>
-              <i
-                class="ri-fullscreen-line"
-                onclick="openModal();currentSlide()"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/3_L_plN3VEL.jpg?updatedAt=1630246604268" alt="Sunrise" />
-          <div class="img__info">
-            <span><q>Sunrise</q></span>
-            <div class="img__info-icon">
-              <i class="ri-heart-line"></i>
-              <i class="ri-download-2-line"></i>
-              <i
-                class="ri-fullscreen-line"
-                onclick="openModal();currentSlide()"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <div class="col">
-        <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/4_x2uAKAaMbl.jpg?updatedAt=1630246604993" alt="Fluids" />
-          <div class="img__info">
-            <span><q>Fluids</q></span>
-            <div class="img__info-icon">
-              <i class="ri-heart-line"></i>
-              <i class="ri-download-2-line"></i>
-              <i
-                class="ri-fullscreen-line"
-                onclick="openModal();currentSlide()"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/5_eJgSVMrat.jpg?updatedAt=1630246606232" alt="Droplets" />
-          <div class="img__info">
-            <span><q>Droplets</q></span>
-            <div class="img__info-icon">
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/1_pP4xoB4ez7.jpg?updatedAt=1630246602988"
+            alt="Play in a pond"
+          />
+          <div class="col-img-info">
+            <span><q>Này thì về giặt giày thôi rồi lun</q></span>
+            <div class="col-img-info-icon">
               <i class="ri-heart-line"></i>
               <i class="ri-download-2-line"></i>
               <i class="ri-fullscreen-line"></i>
             </div>
           </div>
         </div>
-        <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/6_E0vMzduLd.jpg?updatedAt=1630246606991" alt="Waterfall" />
-          <div class="img__info">
-            <span><q>Waterfall</q></span>
-            <div class="img__info-icon">
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/2_PxxoCHFjw.jpg?updatedAt=1630246603091"
+            alt="Water drop"
+          />
+          <div class="col-img-info">
+            <span><q>Một hạt mưa sa? Chắc vậy</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/3_L_plN3VEL.jpg?updatedAt=1630246604268"
+            alt="Sunrise"
+          />
+          <div class="col-img-info">
+            <span><q>Sáng rồi! Ngủ gì nữa?</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/12_QVrEpKCZW.jpg?updatedAt=1630247811887"
+            alt="Sunrise"
+          />
+          <div class="col-img-info">
+            <span><q>Đừng để ngoại hình đánh lừa</q></span>
+            <div class="col-img-info-icon">
               <i class="ri-heart-line"></i>
               <i class="ri-download-2-line"></i>
               <i class="ri-fullscreen-line"></i>
@@ -165,11 +145,87 @@
       </div>
       <!--  -->
       <div class="col">
-        <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/7_OoACi2aOb.jpg?updatedAt=1630246608066" alt="Vegetable sandwich" />
-          <div class="img__info">
-            <span><q>Vegetable sandwich</q></span>
-            <div class="img__info-icon">
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/4_x2uAKAaMbl.jpg?updatedAt=1630246604993"
+            alt="Fluids"
+          />
+          <div class="col-img-info">
+            <span><q>Giống khói ... mà lại giống dung dịch?</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/5_eJgSVMrat.jpg?updatedAt=1630246606232"
+            alt="Droplets"
+          />
+          <div class="col-img-info">
+            <span><q>Máy ảnh nhiêu xèng mà ngon vậy ba?</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/6_E0vMzduLd.jpg?updatedAt=1630246606991"
+            alt="Waterfall"
+          />
+          <div class="col-img-info">
+            <span><q>Thác có vẻ kinh đấy</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/10_V8gd2Bbtd.jpg?updatedAt=1630247810339"
+            alt="Waterfall"
+          />
+          <div class="col-img-info">
+            <span><q>Lồng đèn của mấy bạn Khựa nè</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col">
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/7_OoACi2aOb.jpg?updatedAt=1630246608066"
+            alt="Vegetable sandwich"
+          />
+          <div class="col-img-info">
+            <span><q>Mấy bé bánh kẹp ứ có thịt</q></span>
+            <div class="col-img-info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-img">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/8_7p3kj0E6Wd.jpg?updatedAt=1630246608553"
+            alt="Plants on table"
+          />
+          <div class="col-img-info">
+            <span><q>Bàn ăn? Đặt cây?</q></span>
+            <div class="col-img-info-icon">
               <i class="ri-heart-line"></i>
               <i class="ri-download-2-line"></i>
               <i class="ri-fullscreen-line"></i>
@@ -177,10 +233,13 @@
           </div>
         </div>
         <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/8_7p3kj0E6Wd.jpg?updatedAt=1630246608553" alt="Plants on table" />
-          <div class="img__info">
-            <span><q>Plants on table</q></span>
-            <div class="img__info-icon">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/9_e8dxZ86VS.jpg?updatedAt=1630246609439"
+            alt="Desktop"
+          />
+          <div class="col-img-info">
+            <span><q>Wow! Góc làm việc mơ ước</q></span>
+            <div class="col-img-info-icon">
               <i class="ri-heart-line"></i>
               <i class="ri-download-2-line"></i>
               <i class="ri-fullscreen-line"></i>
@@ -188,10 +247,13 @@
           </div>
         </div>
         <div class="img">
-          <img src="https://ik.imagekit.io/9r6zmqeo432/images/9_e8dxZ86VS.jpg?updatedAt=1630246609439" alt="Desktop" />
-          <div class="img__info">
-            <span><q>Desktop</q></span>
-            <div class="img__info-icon">
+          <img
+            src="https://ik.imagekit.io/9r6zmqeo432/images/11_yIYcYAkcQl.jpg?updatedAt=1630247810977"
+            alt="Desktop"
+          />
+          <div class="col-img-info">
+            <span><q>Loại chim gì đây?</q></span>
+            <div class="col-img-info-icon">
               <i class="ri-heart-line"></i>
               <i class="ri-download-2-line"></i>
               <i class="ri-fullscreen-line"></i>

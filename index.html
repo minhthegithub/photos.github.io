@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photos</title>
+    <title>1second</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -18,28 +18,35 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- ===========================  nav =========================== -->
     <div id="top"></div>
     <!-- category -->
     <div class="category">
-      <div class="search-bar">
-        <div class="search-bar-icon"><i class="ri-search-line"></i></div>
+      <div class="search__bar flex__center">
+        <div class="search__bar-icon"><i class="ri-search-line"></i></div>
         <input type="search" placeholder="Tìm kiếm hình ảnh ..." />
       </div>
-      <div class="category__nav">
-        <div class="category__item">Item 1</div>
-        <div class="category__item">Item 2</div>
-        <div class="category__item">Item 3</div>
+      <div class="category__nav flex__center">
+        <div class="category__item">
+          <a href="index.html">Ảnh&nbsp;<i class="ri-camera-line"></i></a>
+        </div>
+        <div class="category__item">
+          <a href="video.html">Video&nbsp;<i class="ri-live-line"></i></a>
+        </div>
+        <div class="category__item">
+          <a href="music.html">Nhạc&nbsp;<i class="ri-headphone-line"></i></a>
+        </div>
       </div>
     </div>
     <!-- container -->
     <div class="container">
       <!-- menu -->
       <nav class="nav">
-        <div class="heading">
-          <h1 class="title">photos</h1>
+        <div class="heading flex__center">
+          <h1 class="title">1second</h1>
           <p class="nav__description">
-            Đây là demo Frontend website lưu trữ hình ảnh. Website trong chuỗi
-            tập tành làm Frontend.
+            Đây là demo Frontend website đa phương tiện. Website trong chuỗi tập
+            tành làm Frontend.
           </p>
         </div>
         <div class="main__nav">
@@ -53,7 +60,7 @@
           <div class="main__nav-item"><a href="#">Thùng rác</a></div>
         </div>
         <div class="ending">
-          <div class="social">
+          <div class="social flex__center">
             <a class="social-link" href="#"
               ><i class="ri-facebook-circle-fill"></i
             ></a>
@@ -67,177 +74,141 @@
           <p class="copyright">&#169; Bản quyền - Của ai nhỉ?</p>
         </div>
       </nav>
-
-      <!-- =================== container content ==================== -->
-      <div class="container__content">
-        <!--  -->
-        <div class="col">
-          <div class="img" id="img">
-            <img src="/images/1.jpg" alt="Play in a pond" />
-            <div class="img__info">
-              <span><q>Play in a pond</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line" onclick="openModal(); currentSlide()"></i>
-              </div>
-            </div>
-          </div>
-          <div class="img">
-            <img src="/images/2.jpg" alt="Water drop" />
-            <div class="img__info">
-              <span><q>Water drop</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line" onclick="openModal(); currentSlide()"></i>
-              </div>
-            </div>
-          </div>
-          <div class="img">
-            <img src="/images/3.jpg" alt="Sunrise" />
-            <div class="img__info">
-              <span><q>Sunrise</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line" onclick="openModal(); currentSlide()"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="col">
-          <div class="img">
-            <img src="/images/4.jpg" alt="Fluids" />
-            <div class="img__info">
-              <span><q>Fluids</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line" onclick="openModal(); currentSlide()"></i>
-              </div>
-            </div>
-          </div>
-          <div class="img">
-            <img src="/images/5.jpg" alt="Droplets" />
-            <div class="img__info">
-              <span><q>Droplets</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line"></i>
-              </div>
-            </div>
-          </div>
-          <div class="img">
-            <img src="/images/6.jpg" alt="Waterfall" />
-            <div class="img__info">
-              <span><q>Waterfall</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="col">
-          <div class="img">
-            <img src="/images/7.jpg" alt="Vegetable sandwich" />
-            <div class="img__info">
-              <span><q>Vegetable sandwich</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line"></i>
-              </div>
-            </div>
-          </div>
-          <div class="img">
-            <img src="/images/8.jpg" alt="Plants on table" />
-            <div class="img__info">
-              <span><q>Plants on table</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line"></i>
-              </div>
-            </div>
-          </div>
-          <div class="img">
-            <img src="/images/9.jpg" alt="Desktop" />
-            <div class="img__info">
-              <span><q>Desktop</q></span>
-              <div class="img__info-icon">
-                <i class="ri-heart-line"></i>
-                <i class="ri-download-2-line"></i>
-                <i class="ri-fullscreen-line"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-
-      <!-- =============== Modal =============== -->
-      <div class="modal" id="modal">
-        <span class="modal__exit" onclick="exitModal()"
-          ><i class="ri-fullscreen-exit-line"></i
-        ></span>
-        <!-- modal content -->
-        <div class="modal__content">
-          <!--  -->
-          <div class="slide">
-            <img src="images/1.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="images/2.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="images/3.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="images/4.jpg" alt="" />
-          </div>
-
-          <a class="prev" onclick="changeSlide(-1)"
-            ><i class="ri-arrow-left-s-fill"></i
-          ></a>
-          <a class="next" onclick="changeSlide(1)"
-            ><i class="ri-arrow-right-s-fill"></i
-          ></a>
-
-          <div class="caption__container">
-            <p id="caption"></p>
-          </div>
-
-          <!-- img demo -->
-          <div class="col_img">
-            <img class="demo" src="images/1.jpg" alt="Play in a pond" onclick="currentSlide(1)">
-          </div>
-          <div class="col_img">
-            <img class="demo" src="images/2.jpg" alt="Water drop" onclick="currentSlide(2)">
-          </div>
-          <div class="col_img">
-            <img class="demo" src="images/3.jpg" alt="Sunrise" onclick="currentSlide(3)">
-          </div>
-          <div class="col_img">
-            <img class="demo" src="images/4.jpg" alt="Fluids" onclick="currentSlide(4)">
-          </div>
-
-        </div>
-        <!--  -->
-      </div>
-      <!--  -->
     </div>
-    <a class="btn-to-top" id="btn-to-top" href="#top"
+    <!-- =========================== end ============================== -->
+
+    <!-- =========================== content =========================== -->
+    <div class="container__content">
+      <!--  -->
+      <div class="col">
+        <div class="img" id="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/1_pP4xoB4ez7.jpg?updatedAt=1630246602988" alt="Play in a pond" />
+          <div class="img__info">
+            <span><q>Play in a pond</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i
+                class="ri-fullscreen-line"
+                onclick="openModal();currentSlide()"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/2_PxxoCHFjw.jpg?updatedAt=1630246603091" alt="Water drop" />
+          <div class="img__info">
+            <span><q>Water drop</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i
+                class="ri-fullscreen-line"
+                onclick="openModal();currentSlide()"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/3_L_plN3VEL.jpg?updatedAt=1630246604268" alt="Sunrise" />
+          <div class="img__info">
+            <span><q>Sunrise</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i
+                class="ri-fullscreen-line"
+                onclick="openModal();currentSlide()"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col">
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/4_x2uAKAaMbl.jpg?updatedAt=1630246604993" alt="Fluids" />
+          <div class="img__info">
+            <span><q>Fluids</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i
+                class="ri-fullscreen-line"
+                onclick="openModal();currentSlide()"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/5_eJgSVMrat.jpg?updatedAt=1630246606232" alt="Droplets" />
+          <div class="img__info">
+            <span><q>Droplets</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/6_E0vMzduLd.jpg?updatedAt=1630246606991" alt="Waterfall" />
+          <div class="img__info">
+            <span><q>Waterfall</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col">
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/7_OoACi2aOb.jpg?updatedAt=1630246608066" alt="Vegetable sandwich" />
+          <div class="img__info">
+            <span><q>Vegetable sandwich</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/8_7p3kj0E6Wd.jpg?updatedAt=1630246608553" alt="Plants on table" />
+          <div class="img__info">
+            <span><q>Plants on table</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://ik.imagekit.io/9r6zmqeo432/images/9_e8dxZ86VS.jpg?updatedAt=1630246609439" alt="Desktop" />
+          <div class="img__info">
+            <span><q>Desktop</q></span>
+            <div class="img__info-icon">
+              <i class="ri-heart-line"></i>
+              <i class="ri-download-2-line"></i>
+              <i class="ri-fullscreen-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========================== content =========================== -->
+
+    <a class="btn-to-top flex__center" id="btn-to-top" href="#top"
       ><i class="ri-arrow-up-line"></i
     ></a>
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="/js/main.js"></script>
   </body>
 </html>

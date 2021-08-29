@@ -19,27 +19,34 @@
     <link rel="stylesheet" href="/css/members.css" />
   </head>
   <body>
+    <!-- ===========================  nav =========================== -->
     <div id="top"></div>
     <!-- category -->
     <div class="category">
-      <div class="search-bar">
-        <div class="search-bar-icon"><i class="ri-search-line"></i></div>
+      <div class="search__bar flex__center">
+        <div class="search__bar-icon"><i class="ri-search-line"></i></div>
         <input type="search" placeholder="Tìm kiếm hình ảnh ..." />
       </div>
-      <div class="category__nav">
-        <div class="category__item">Item 1</div>
-        <div class="category__item">Item 2</div>
-        <div class="category__item">Item 3</div>
+      <div class="category__nav flex__center">
+        <div class="category__item">
+          <a href="index.html">Ảnh&nbsp;<i class="ri-camera-line"></i></a>
+        </div>
+        <div class="category__item">
+          <a href="video.html">Video&nbsp;<i class="ri-live-line"></i></a>
+        </div>
+        <div class="category__item">
+          <a href="music.html">Nhạc&nbsp;<i class="ri-headphone-line"></i></a>
+        </div>
       </div>
     </div>
     <!-- container -->
     <div class="container">
       <!-- menu -->
       <nav class="nav">
-        <div class="heading">
-          <h1 class="title">photos</h1>
+        <div class="heading flex__center">
+          <h1 class="title">1second</h1>
           <p class="nav__description">
-            Đây là Frontend website lưu trữ hình ảnh. Website trong chuỗi tập
+            Đây là demo Frontend website đa phương tiện. Website trong chuỗi tập
             tành làm Frontend.
           </p>
         </div>
@@ -54,7 +61,7 @@
           <div class="main__nav-item"><a href="#">Thùng rác</a></div>
         </div>
         <div class="ending">
-          <div class="social">
+          <div class="social flex__center">
             <a class="social-link" href="#"
               ><i class="ri-facebook-circle-fill"></i
             ></a>
@@ -63,55 +70,53 @@
             ></a>
             <a class="social-link" href="#"><i class="ri-youtube-line"></i></a>
             <a class="social-link" href="#"><i class="ri-discord-fill"></i></a>
+            <a class="social-link" href="#"><i class="ri-github-fill"></i></a>
           </div>
-          <p class="copyright">&#169; Bản quyền - Ai đó</p>
+          <p class="copyright">&#169; Bản quyền - Của ai nhỉ?</p>
         </div>
       </nav>
+    </div>
+    <!-- =========================== end ============================== -->
 
-      <!-- ============================== -->
-      <div class="container__content">
-        <div class="container__member">
-          <h1 class="name__group">Black cat guild</h1>
-          <div class="member__list">
-            <div class="member__card">
-              <a href="#"
-                ><div class="member__card-img">
-                  <img src="/images/mem2.jpg" alt="avatar" />
-                </div>
-                <div class="member__name">Vũ Minh Thế</div>
-                <p class="description">Bang chủ</p></a
-              >
-            </div>
-            <div class="member__card">
-              <a href="#"
-                ><div class="member__card-img">
-                  <img src="/images/mem1.jpg" alt="avatar" />
-                </div>
+    <!-- =========================== content =========================== -->
+    <div class="container__content">
+      <div class="container__member">
+        <h1 class="name__group">Black cat guild</h1>
+        <div class="member__list">
+          <div class="member__card">
+            <a href="#"
+              ><div class="member__card-img">
+                <img src="/images/mem2.jpg" alt="avatar" />
+              </div>
+              <div class="member__name">Vũ Minh Thế</div>
+              <p class="description">Bang chủ</p></a
+            >
+          </div>
+          <div class="member__card">
+            <a href="#"
+              ><div class="member__card-img">
+                <img src="/images/mem1.jpg" alt="avatar" />
+              </div>
 
-                <div class="member__name">Nguyễn Phước Dũng</div>
-                <p class="member__description">Nông dân</p></a
-              >
-            </div>
-            <div class="member__card">
-              <a href="#"
-                ><div class="member__card-img">
-                  <img src="/images/mem3.png" alt="avatar" />
-                </div>
-                <div class="member__name">Bot</div>
-                <p class="description">Nô lệ</p></a
-              >
-            </div>
+              <div class="member__name">Nguyễn Phước Dũng</div>
+              <p class="member__description">Nông dân</p></a
+            >
+          </div>
+          <div class="member__card">
+            <a href="#"
+              ><div class="member__card-img">
+                <img src="/images/mem3.png" alt="avatar" />
+              </div>
+              <div class="member__name">Bot</div>
+              <p class="description">Nô lệ</p></a
+            >
           </div>
         </div>
       </div>
-      <!-- =================== -->
     </div>
-    <a class="btn-to-top" id="btn-to-top" href="#top"
-      ><i class="ri-arrow-up-line"></i
-    ></a>
+    <!-- =========================== end =========================== -->
 
     <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

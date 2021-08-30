@@ -51,6 +51,14 @@ img {
   justify-content: center;
   align-items: center;
 }
+.content__right {
+  display: none;
+  width: 80%;
+  height: auto;
+  margin-left: 20%;
+  border-top: 1px solid var(--tertiary-color);
+  padding: 0.5rem;
+}
 /*  */
 
 /* =============== MAIN CSS ============== */
@@ -93,7 +101,7 @@ img {
   transition: all 0.3s;
 }
 
-.nav__top-search-bar-icon:hover{
+.nav__top-search-bar-icon:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   box-shadow: 0 0 10px 1px var(--tertiary-color);
@@ -102,34 +110,40 @@ img {
 .nav__top-type-media {
   height: 100%;
   margin-right: 1rem;
+  overflow: hidden;
 }
 
-.nav__top-type-media-item {
+.nav__top-type-media button {
+  background-color: var(--primary-color);
+  border: none;
   width: 8rem;
-  height: 80%;
+  height: 70%;
   display: flex;
   font-weight: var(--medium-font-weight);
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
+  transition: all 0.5s;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 
 .nav__top-type-media-item i {
   font-size: 1.5rem;
 }
 
-.nav__top-type-media-item a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 1.5rem;
-  transition: all 0.3s;
-}
-
-.nav__top-type-media-item a:hover {
+.nav__top-type-media-item:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.nav__top-type-media button.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  outline: none;
+  width: 8rem;
+  height: 80%;
+  font-size: 1.1rem;
 }
 /* ===== end nav top =====  */
 
@@ -174,30 +188,22 @@ img {
 
 .nav__side-content {
   width: 100%;
+  flex-direction: column;
 }
 
 .nav__side-content-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem 0;
-  text-align: center;
-  transition: all 0.2s;
-  width: 100%;
-  line-height: 2.5rem;
-}
-
-.nav__side-content-item a {
   width: 80%;
-  display: block;
-  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
   font-weight: var(--medium-font-weight);
-  text-transform: capitalize;
-  transition: all 0.3s;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);
+  transition: all 0.5s;
 }
 
-.nav__side-content-item a:hover {
+.nav__side-content-item:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
@@ -226,16 +232,52 @@ img {
 
 /* ===== end nav left side =====  */
 
-/* ===== content left image =====  */
-.content__right {
-  width: 80%;
-  height: auto;
-  display: flex;
-  margin-left: 20%;
-  border-top: 1px solid var(--tertiary-color);
-  padding: 0.5rem;
+/* ===== homepage =====  */
+.homepage__container {
+  width: 100%;
+  height: calc(100vh - 5.6rem);
+  flex-direction: column;
+  background-image: url("https://wallpapercave.com/wp/wp5748130.jpg");
+  background-size: cover;
+  justify-content: start;
+  padding-top: 5rem;
 }
 
+.homepage__container * {
+  display: inline-block;
+}
+
+.homepage__container h1,
+.homepage__container p {
+  font-size: 2.5rem;
+}
+
+.homepage__container h1 {
+  /* margin-bottom: 1rem; */
+  position: relative;
+}
+
+.homepage__container h1::after{
+  position: absolute;
+  bottom: -5rem;
+  content: "Nơi lưu trữ những giá trị cuộc sống";
+  font-size: 1.3rem;
+  font-weight: var(--regular-font-weight);
+  font-style: italic;
+}
+
+.highlight-text {
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+}
+/* ===== end homepage =====  */
+
+/* ===== member page =====  */
+
+/* ===== end member page =====  */
+
+/* ===== content image =====  */
 .col {
   width: calc(100% / 3);
   height: 100%;
@@ -300,13 +342,106 @@ img {
 .col-img .col-img-info-icon {
   margin-top: 2rem;
 }
+/* ===== end content  image =====  */
 
+/* ===== content  video =====  */
+.video {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.video__card {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  /* flex: calc((100% - 4rem) / 3); */
+  width: 16rem;
+  height: 15rem;
+  margin: 0.5rem;
+  transition: all 0.3s;
+}
+
+.video__card:hover{
+  box-shadow: 0 0 10px 2px lightgray;
+}
+
+.video__card iframe {
+  width: 100%;
+  height: auto;
+}
+
+.video__card-info {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.video__card-date{
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+.video__card-creator{
+  margin-top: 0.3rem;
+}
+
+.video__card-title {
+  font-size: 1.1rem;
+  font-weight: var(--bold-font-weight);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video__card-creator{
+  font-size: var(--small-font-size);
+}
+
+.video__card-creator::before{
+  content: "Người đăng: ";
+}
+
+.video__card-icons{
+  display: none;
+  align-self: flex-end;
+  margin-right: 0.3rem;
+}
+
+.video__card-icons i {
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem;
+}
+
+.video__card-icons i:hover{
+  font-weight: var(--bold-font-weight);
+  /* background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 50%; */
+}
+
+.video__card:hover .video__card-icons{
+  display: block;
+}
+
+.video__card:hover .video__card-date{
+  display: none;
+}
+
+/* ===== end content  video =====  */
+
+/* button to top  */
 .btn-to-top {
+  display: none;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   width: 3rem;
   height: 3rem;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 50%;
@@ -319,3 +454,4 @@ img {
   color: var(--primary-color);
   box-shadow: 0 0 5px 1px var(--primary-color);
 }
+/*  */

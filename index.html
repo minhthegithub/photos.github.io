@@ -34,17 +34,24 @@
         <input type="search" placeholder="Tìm kiếm hình ảnh ..." />
       </div>
       <div class="nav__top-type-media flex__center">
-        <div class="nav__top-type-media-item">
-          <a href="index.html">Ảnh&nbsp;&nbsp;<i class="ri-camera-line"></i></a>
-        </div>
-        <div class="nav__top-type-media-item">
-          <a href="video.html">Video&nbsp;&nbsp;<i class="ri-live-line"></i></a>
-        </div>
-        <div class="nav__top-type-media-item">
-          <a href="music.html"
-            >Nhạc&nbsp;&nbsp;<i class="ri-headphone-line"></i
-          ></a>
-        </div>
+        <button
+          class="nav__top-type-media-item tab__link"
+          onclick="changeTab(event, 'Image')"
+        >
+          Ảnh&nbsp;&nbsp;<i class="ri-camera-line"></i>
+        </button>
+        <button
+          class="nav__top-type-media-item tab__link"
+          onclick="changeTab(event, 'Video')"
+        >
+          Video&nbsp;&nbsp;<i class="ri-live-line"></i>
+        </button>
+        <button
+          class="nav__top-type-media-item tab__link"
+          onclick="changeTab(event, 'Music')"
+        >
+          Nhạc&nbsp;&nbsp;<i class="ri-headphone-line"></i>
+        </button>
       </div>
     </div>
     <!-- ========== end nav top ========= -->
@@ -55,21 +62,22 @@
         <div class="nav__side-head flex__center">
           <h1 class="nav__side-title">1phút</h1>
           <p class="nav__side-description">
-            Đây là demo Frontend website đa phương tiện. Website trong chuỗi tập
-            tành làm Frontend.
+            Đây là demo Frontend website lưu trữ đa phương tiện. Website trong
+            chuỗi tập tành làm Frontend.
           </p>
         </div>
-        <div class="nav__side-content">
-          <div class="nav__side-content-item">
-            <a href="index.html">Trang chủ</a>
-          </div>
-          <div class="nav__side-content-item">
-            <a href="members.html">Thành viên</a>
-          </div>
-          <div class="nav__side-content-item"><a href="#">Liên lạc</a></div>
-          <div class="nav__side-content-item"><a href="#">Tải lên</a></div>
-          <div class="nav__side-content-item"><a href="#">Yêu thích</a></div>
-          <div class="nav__side-content-item"><a href="#">Thùng rác</a></div>
+        <div class="nav__side-content flex__center">
+          <button
+            class="nav__side-content-item tab__link"
+            onclick="changeTab(event,'Home')"
+          >
+            Trang chủ
+          </button>
+          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Member')">Thành viên</button>
+          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Contact')">Liên lạc</button>
+          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Upload')">Tải lên</button>
+          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Favorite')">Yêu thích</button>
+          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Bin')">Thùng rác</button>
         </div>
         <div class="nav__side-end">
           <div class="nav__side-social flex__center">
@@ -86,8 +94,64 @@
     <!-- ========== end nav left side ========= -->
     <!-- =========================== end nav ============================== -->
 
-    <!-- =========================== content =========================== -->
-    <div class="content__right">
+    <!-- =========================== Homepage ============================== -->
+    <div class="content__right" id="Home">
+      <div class="homepage__container flex__center">
+        <h1>
+          <p class="highlight-text">&nbsp;Chào mừng&nbsp;</p>
+          bạn<br />đến với kho lưu trữ
+          <p class="highlight-text">&nbsp;đa phương tiện&nbsp;</p>
+          <br />của
+          <p class="highlight-text">&nbsp;chúng tôi&nbsp;</p>
+          <br>
+        </h1>
+        <br />
+      </div>
+    </div>
+    <!-- =========================== end homepage ============================== -->
+
+    <!-- ===========================  member ============================== -->
+    <div class="content__right" id="Member">
+      <div class="member__container">
+        <h1>Danh sách thành viên của trang</h1>
+        <div class="member__list">
+          <div class="member__list-card">
+            <img src="" alt="">
+            <p class="member__list-card-name">Vũ Minh Thế</p>
+            <p>Trưởng nhóm</p>
+            <a href="#">Tìm hiểu thêm về anh ấy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========================== end member =========================== -->
+
+    <!-- ===========================  member ============================== -->
+    <div class="content__right" id="Contact">
+      đây là trang liên lạc
+    </div>
+    <!-- =========================== end member =========================== -->
+
+    <!-- ===========================  member ============================== -->
+    <div class="content__right" id="Upload">
+      đây là trang tải lên
+    </div>
+    <!-- =========================== end member =========================== -->
+
+    <!-- ===========================  member ============================== -->
+    <div class="content__right" id="Favorite">
+      đây là trang yêu thích
+    </div>
+    <!-- =========================== end member =========================== -->
+
+    <!-- ===========================  member ============================== -->
+    <div class="content__right" id="Bin">
+      đây là trang thùng rác
+    </div>
+    <!-- =========================== end member =========================== -->
+
+    <!-- =========================== content image =========================== -->
+    <div class="content__right" id="Image">
       <!--  -->
       <div class="col">
         <div class="col-img">
@@ -214,7 +278,7 @@
             alt="Vegetable sandwich"
           />
           <div class="col-img-info">
-            <span><q>Mấy bé bánh kẹp ứ có thịt</q></span>
+            <span><q>Mấy bé bánh kẹp ứ chịu có thịt</q></span>
             <div class="col-img-info-icon">
               <i class="ri-heart-line"></i>
               <i class="ri-download-2-line"></i>
@@ -267,7 +331,218 @@
         </div>
       </div>
     </div>
-    <!-- =========================== content =========================== -->
+    <!-- ========================= end content image ========================= -->
+
+    <!-- ========================= content video ========================= -->
+    <div class="content__right" id="Video">
+      <div class="video flex__center">
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/nVgTCQBA#cjkWo8HY-S9IO9Pf5N7rExDKgDYx5FtajDM5Vfs8BDw"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-date">26-08-2021</p>
+            <p class="video__card-title"><p class="video__card-title">Tập tay với tạ đơn</p>
+          </p>
+            <p class="video__card-creator">cottonbro</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/yQhiFABS#cp42CzVo9G8rpVE6XshzhbN7fjgXwe9sglYx1q_OcMo"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-date">30-08-2021</p>
+            <p class="video__card-title">Hoạt ảnh với một cây thước</p>
+            <p class="video__card-creator">cottonbro</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/jYhU2IxL#A6VOx2TXt-Qv7MlwboYVDFQZqdyzP3jX19q-GR5MuXk"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-date">10-08-2021</p>
+            <p class="video__card-title">Tôi mua 1 ván trượt mới</p>
+            <p class="video__card-creator">Darina Belonogova</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/KVgilIiA#JVlUVtIXITYsc5oBEMlwV8fvoIHBsHLKJ6UyuKQMFGg"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-date">04-07-2021</p>
+            <p class="video__card-title">Cánh đồng hoa oải hương</p>
+            <p class="video__card-creator">Ivan Khmelyuk</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/yUx0wKYb#-L4RrJquUJC6dkDYjoXIVLzRR6e4HS6EzCJiqapRmTA"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-date">25-12-2020</p>
+            <p class="video__card-title">Tôi không biết đặt tên gì cho video này!</p>
+            <p class="video__card-creator">Pavel Danilyuk</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/nVgTCQBA#cjkWo8HY-S9IO9Pf5N7rExDKgDYx5FtajDM5Vfs8BDw"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">cottonbro</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/yQhiFABS#cp42CzVo9G8rpVE6XshzhbN7fjgXwe9sglYx1q_OcMo"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">cottonbro</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/jYhU2IxL#A6VOx2TXt-Qv7MlwboYVDFQZqdyzP3jX19q-GR5MuXk"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">Darina Belonogova</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/KVgilIiA#JVlUVtIXITYsc5oBEMlwV8fvoIHBsHLKJ6UyuKQMFGg"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">Ivan Khmelyuk</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/yUx0wKYb#-L4RrJquUJC6dkDYjoXIVLzRR6e4HS6EzCJiqapRmTA"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">Pavel Danilyuk</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/KVgilIiA#JVlUVtIXITYsc5oBEMlwV8fvoIHBsHLKJ6UyuKQMFGg"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">Ivan Khmelyuk</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video__card">
+          <iframe
+            frameborder="0"
+            src="https://mega.nz/embed/yUx0wKYb#-L4RrJquUJC6dkDYjoXIVLzRR6e4HS6EzCJiqapRmTA"
+            allowfullscreen
+          ></iframe>
+          <div class="video__card-info">
+            <p class="video__card-title">Tên video</p>
+            <p class="video__card-creator">Pavel Danilyuk</p>
+            <div class="video__card-icons">
+              <i class="ri-thumb-up-line"></i>
+              <i class="ri-message-2-line"></i>
+              <i class="ri-bookmark-line"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- ========================= end content video ========================= -->
+
+    <!-- ========================= content video ========================= -->
+    <div class="content__right" id="Music"><p>đây là music tab</p></div>
+    <!-- ========================= end content video ========================= -->
 
     <a class="btn-to-top flex__center" id="btn-to-top" href="#top"
       ><i class="ri-arrow-up-line"></i
@@ -277,5 +552,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script>
+      $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+          $(".btn-to-top").css("display", "flex");
+        } else {
+          $(".btn-to-top").css("display", "none");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -79,32 +79,35 @@ img {
 
 .nav__top-search-bar {
   margin-left: 20%;
+  position: relative;
 }
+
+
 
 .nav__top-search-bar input {
   border: 1px solid var(--tertiary-color);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   width: 30rem;
   border-radius: 3rem;
 }
 
 .nav__top-search-bar-icon {
+  position: absolute;
+  right: 0;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  display: inline-block;
+  box-shadow: 0 0 2px 1px var(--tertiary-color);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 50%;
+  border-radius: 15rem;
   transition: all 0.3s;
 }
 
 .nav__top-search-bar-icon:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  box-shadow: 0 0 10px 1px var(--tertiary-color);
+  width: 5rem;
 }
 
 .nav__top-type-media {
@@ -257,7 +260,7 @@ img {
   position: relative;
 }
 
-.homepage__container h1::after{
+.homepage__container h1::after {
   position: absolute;
   bottom: -5rem;
   content: "Nơi lưu trữ những giá trị cuộc sống";
@@ -273,9 +276,138 @@ img {
 }
 /* ===== end homepage =====  */
 
-/* ===== member page =====  */
+/* ===== upload page =====  */
 
-/* ===== end member page =====  */
+/* ===== end upload page =====  */
+
+/* ===== favorite page =====  */
+
+/* ===== end favorite page =====  */
+
+/* ===== bin page =====  */
+
+/* ===== end bin page =====  */
+
+/* ===== about page =====  */
+.about__container{
+  width: 100%;
+  height: auto;
+  background-image: url("https://ik.imagekit.io/9r6zmqeo432/images/bg_R7N4wBCuyb.jpg?updatedAt=1630376066310");
+  flex-direction: column;
+}
+
+.about__intro{
+  margin: 2rem 6rem;
+  font-size: var(--medium-font-size);
+}
+
+.contact__link{
+  font-size: 1.1rem;
+  font-weight: var(--medium-font-weight);
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.contact__link:hover{
+  border: 1px solid ;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.about__member{
+  flex-direction: column;
+}
+
+.about__title{
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+
+.member__list{
+  justify-content: space-around;
+}
+
+.member__list-card{
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  /* box-shadow: 0 0 5px 1px var(--tertiary-color); */
+  width: 18rem;
+  height: 23rem;
+  transition: all 0.3s;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.member__list-card img, .member__list-card p{
+  margin-bottom: 1rem;
+}
+
+.member__list-card img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.member__list-card a{
+  transition: all 0.3s;
+}
+
+.member__list-card a:hover{
+  text-decoration: underline;
+}
+
+.member__list-card:hover{
+  box-shadow: 0 0 10px 1px var(--tertiary-color);
+}
+
+.member__list-card-name{
+  font-size: var(--medium-font-size);
+  font-weight: var(--medium-font-weight);
+  text-transform: capitalize;
+}
+.member__list-card-position{
+  font-style: italic;
+}
+
+.about__contact{
+  width: 100%;
+  padding: 0 6rem;
+  margin-bottom: 1rem;
+}
+
+.about__contact h1{
+  text-align: center;
+}
+
+.about__contact-map{
+  width: 60%;
+  margin-right: 1rem;
+}
+
+.about__contact-map iframe{
+  width: 100%;
+  height: 20rem;
+}
+
+.about__contact-text {
+  background-image: url("https://picfiles.alphacoders.com/462/thumb-1920-462108.jpg");
+  background-size: cover;
+  background-position: 0 80%;
+  align-self: start;
+  /* width: 50%; */
+  width: 30rem;
+height: 20rem;
+  padding: 0 2rem;
+}
+
+.about__contact-text p{
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* ===== end about page =====  */
 
 /* ===== content image =====  */
 .col {
@@ -360,7 +492,7 @@ img {
   transition: all 0.3s;
 }
 
-.video__card:hover{
+.video__card:hover {
   box-shadow: 0 0 10px 2px lightgray;
 }
 
@@ -377,13 +509,13 @@ img {
   margin-left: 0.5rem;
 }
 
-.video__card-date{
+.video__card-date {
   font-size: 0.7rem;
   font-style: italic;
   margin-top: -1rem;
 }
 
-.video__card-creator{
+.video__card-creator {
   margin-top: 0.3rem;
 }
 
@@ -395,15 +527,15 @@ img {
   text-overflow: ellipsis;
 }
 
-.video__card-creator{
+.video__card-creator {
   font-size: var(--small-font-size);
 }
 
-.video__card-creator::before{
+.video__card-creator::before {
   content: "Người đăng: ";
 }
 
-.video__card-icons{
+.video__card-icons {
   display: none;
   align-self: flex-end;
   margin-right: 0.3rem;
@@ -415,18 +547,18 @@ img {
   padding: 0.2rem;
 }
 
-.video__card-icons i:hover{
+.video__card-icons i:hover {
   font-weight: var(--bold-font-weight);
   /* background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: 50%; */
 }
 
-.video__card:hover .video__card-icons{
+.video__card:hover .video__card-icons {
   display: block;
 }
 
-.video__card:hover .video__card-date{
+.video__card:hover .video__card-date {
   display: none;
 }
 

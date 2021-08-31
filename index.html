@@ -28,10 +28,10 @@
     <!-- ========== nav top ========= -->
     <div class="nav__top">
       <div class="nav__top-search-bar flex__center">
+        <input type="search" placeholder="Tìm kiếm ..." />
         <div class="nav__top-search-bar-icon">
           <i class="ri-search-line"></i>
         </div>
-        <input type="search" placeholder="Tìm kiếm hình ảnh ..." />
       </div>
       <div class="nav__top-type-media flex__center">
         <button
@@ -62,7 +62,7 @@
         <div class="nav__side-head flex__center">
           <h1 class="nav__side-title">1phút</h1>
           <p class="nav__side-description">
-            Đây là demo Frontend website lưu trữ đa phương tiện. Website trong
+            Đây là demo Frontend website lưu trữ đa phương tiện cá nhân. Website trong
             chuỗi tập tành làm Frontend.
           </p>
         </div>
@@ -73,11 +73,11 @@
           >
             Trang chủ
           </button>
-          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Member')">Thành viên</button>
-          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Contact')">Liên lạc</button>
           <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Upload')">Tải lên</button>
           <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Favorite')">Yêu thích</button>
           <button class="nav__side-content-item tab__link" onclick="changeTab(event,'Bin')">Thùng rác</button>
+          <button class="nav__side-content-item tab__link" onclick="changeTab(event,'About')">Về chúng tôi</button>
+          
         </div>
         <div class="nav__side-end">
           <div class="nav__side-social flex__center">
@@ -110,45 +110,77 @@
     </div>
     <!-- =========================== end homepage ============================== -->
 
-    <!-- ===========================  member ============================== -->
-    <div class="content__right" id="Member">
-      <div class="member__container">
-        <h1>Danh sách thành viên của trang</h1>
-        <div class="member__list">
-          <div class="member__list-card">
-            <img src="" alt="">
-            <p class="member__list-card-name">Vũ Minh Thế</p>
-            <p>Trưởng nhóm</p>
-            <a href="#">Tìm hiểu thêm về anh ấy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- =========================== end member =========================== -->
-
-    <!-- ===========================  member ============================== -->
-    <div class="content__right" id="Contact">
-      đây là trang liên lạc
-    </div>
-    <!-- =========================== end member =========================== -->
-
-    <!-- ===========================  member ============================== -->
+    <!-- ===========================  upload ============================== -->
     <div class="content__right" id="Upload">
       đây là trang tải lên
     </div>
-    <!-- =========================== end member =========================== -->
+    <!-- =========================== end upload =========================== -->
 
-    <!-- ===========================  member ============================== -->
+    <!-- ===========================  favorite ============================== -->
     <div class="content__right" id="Favorite">
       đây là trang yêu thích
     </div>
-    <!-- =========================== end member =========================== -->
+    <!-- =========================== end favorite =========================== -->
 
-    <!-- ===========================  member ============================== -->
+    <!-- ===========================  bin ============================== -->
     <div class="content__right" id="Bin">
       đây là trang thùng rác
     </div>
-    <!-- =========================== end member =========================== -->
+    <!-- =========================== end bin =========================== -->
+
+    <!-- ===========================  about ============================== -->
+    <div class="content__right" id="About">
+      <div class="about__container flex__center">
+        <!--  -->
+        <div class="about__intro">
+          <span>Chúng tôi là một đội ngũ về Front-end <strong>chuyên nghiệp</strong> trong việc tạo các <strong>trang web tốt</strong> đến nỗi <strong>các chuyên gia</strong> phải ngán ngẫm. Với phương châm: <q>Chắc chả sao đâu, làm cho vui ấy mà</q>, tất cả các sản phẩm của chúng tôi luôn <strong>đảm bảo</strong> đạt mức độ <q>vui</q> nhất định và được <strong>đánh giá cực kì cao</strong>. So với những người không cùng chuyên ngành, chúng tôi <strong>tự tin</strong> rằng sản phẩm của mình <strong>hoàn toàn vượt trội</strong>.
+            <br><br>
+          <a class="contact__link" href="#about__contact">Liên hệ ngay</a>
+          </span>
+        </div>
+        <!--  -->
+        <div class="about__member flex__center">
+          <h1 class="about__title">Danh sách thành viên của trang</h1>
+          <div class="member__list flex__center">
+            <div class="member__list-card flex__center">
+              <img src="https://ik.imagekit.io/9r6zmqeo432/images/mem2_hnO4b5gvhq.jpg?updatedAt=1630251478265" alt="">
+              <p class="member__list-card-name">Vũ Minh Thế</p>
+              <p class="member__list-card-position">Trưởng nhóm</p>
+              <a class="flex__center" href="#">Tìm hiểu thêm<menu type="toolbar"></menu></a>
+            </div>
+            <div class="member__list-card flex__center">
+              <img src="https://ik.imagekit.io/9r6zmqeo432/images/mem1_Ee6LWHd4EP.jpg?updatedAt=1630246611082" alt="">
+              <p class="member__list-card-name">Nguyễn Phước Dũng</p>
+              <p class="member__list-card-position">Ăn hại</p>
+              <a class="flex__center" href="#">Tìm hiểu thêm</a>
+            </div>
+            <div class="member__list-card flex__center">
+              <img src="https://ik.imagekit.io/9r6zmqeo432/images/mem3_uE5scjovxK.png?updatedAt=1630246612874" alt="">
+              <p class="member__list-card-name">User 1</p>
+              <p class="member__list-card-position">Bot</p>
+              <a class="flex__center" href="#">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="about__contact">
+          <h1 class="about__title" id="about__contact">Thông tin liên hệ</h1>
+          <div class="about__contact-content flex__center">
+            <div class="about__contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7388199692778!2d106.65494895048612!3d10.754601162499064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef3ead5a767%3A0x8e57278e79fa466e!2zVGh14bqtbiBLaeG7gXUgUGxhemE!5e0!3m2!1svi!2s!4v1630385231531!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="about__contact-text">
+              <p>Tên nhóm: <strong>1phút</strong></p>
+              <p>Số điện thoại: <strong>0388.888.888</strong></p>
+              <p>Email: <strong>support@1phut.com</strong></p>
+              <p>Địa chỉ: Thuận Kiều Plaza, Trái đất</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- =========================== end about =========================== -->
 
     <!-- =========================== content image =========================== -->
     <div class="content__right" id="Image">
